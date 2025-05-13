@@ -95,7 +95,7 @@ export default function HomePage() {
                         }}
                     >
                         <img
-                            src="/profile.png"
+                            src="/portfolio/profile.png"
                             alt="Profile"
                             style={{
                                 width: '100%',
