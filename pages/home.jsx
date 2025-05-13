@@ -95,7 +95,7 @@ export default function HomePage() {
                         }}
                     >
                         <img
-                            src="/portfolio/profile.png"
+                            src="https://sravani6130.github.io/portfolio/profile.png"
                             alt="Profile"
                             style={{
                                 width: '100%',
