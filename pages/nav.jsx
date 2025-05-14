@@ -48,7 +48,7 @@ const Navbar = () => {
                                 {/* Resume Link */}
                                 <a
                                     className="nav-link text-black fw-medium hover-effect"
-                                    href="resume.pdf"
+                                    href="https://sravani6130.github.io/portfolio/resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
