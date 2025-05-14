@@ -44,6 +44,17 @@ const Navbar = () => {
                                     Skills
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                {/* Resume Link */}
+                                <a
+                                    className="nav-link text-black fw-medium hover-effect"
+                                    href="resume.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Resume
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -1,69 +1,89 @@
 import React from 'react';
 import { Box, Typography, Grid, Paper } from '@mui/material';
+import {
+    FaJsSquare,
+    FaReact,
+    FaPython,
+    FaDatabase,
+    FaChartLine,
+    FaHtml5,
+    FaCss3Alt,
+    FaGitAlt,
+    FaLinux,
+    FaChartBar,
+    FaBrain,
+    FaCuttlefish,
+    FaCode,
+} from 'react-icons/fa';
+
+const skills = [
+    { name: 'JavaScript', icon: <FaJsSquare size={32} color="#f0db4f" /> },
+    { name: 'React', icon: <FaReact size={32} color="#61DBFB" /> },
+    { name: 'Python', icon: <FaPython size={32} color="#306998" /> },
+    { name: 'SQL', icon: <FaDatabase size={32} color="#00758f" /> },
+    { name: 'C', icon: <FaCode size={32} color="#5A5A5A" /> },
+    { name: 'C++', icon: <FaCuttlefish size={32} color="#00599C" /> },
+    { name: 'HTML', icon: <FaHtml5 size={32} color="#e34c26" /> },
+    { name: 'CSS', icon: <FaCss3Alt size={32} color="#264de4" /> },
+    { name: 'Git', icon: <FaGitAlt size={32} color="#f1502f" /> },
+    { name: 'Operating System', icon: <FaLinux size={32} color="#000000" /> },
+    { name: 'Data Science', icon: <FaChartBar size={32} color="#6a1b9a" /> },
+    { name: 'AI / ML', icon: <FaBrain size={32} color="#9c27b0" /> },
+    { name: 'D3.js', icon: <FaChartLine size={32} color="#f39c12" /> },
+];
 
 export default function SkillsPage() {
     return (
         <Box
             sx={{
                 minHeight: '100vh',
-                background: 'linear-gradient(to right, #f0f4ff, #ffffff)',
-                py: { xs: 6, md: 12 },
-                px: { xs: 3, md: 8 },
+                width: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                bgcolor: '#f5f5f5',
+                p: 4,
             }}
         >
-            <Grid container spacing={6} alignItems="center">
-                {/* Left - Text Content */}
-                <Grid item xs={12} md={6}>
-                    <Typography
-                        variant="h2"
-                        sx={{
-                            fontWeight: 'bold',
-                            fontSize: { xs: '2.5rem', md: '4rem' },
-                            color: '#00004d',
-                            mb: 2,
-                        }}
-                    >
-                        Skillls pageeeeeeeeeeeeeeee
-                    </Typography>
-
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            fontSize: { xs: '1.1rem', md: '1.3rem' },
-                            color: '#333333',
-                            lineHeight: 1.8,
-                            mb: 3,
-                        }}
-                    >
-                        I’m someone who loves to move—on the dance floor, through code, and across new places. I work on AI and machine learning projects, with a deep interest in data science.
-                    </Typography>
-
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            fontSize: { xs: '1.1rem', md: '1.3rem' },
-                            color: '#333333',
-                            lineHeight: 1.8,
-                            mb: 3,
-                        }}
-                    >
-                        I also love solo travel—wandering through quiet temples, enjoying good food, and finding peace in green hills and fresh air.
-                    </Typography>
-
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            fontSize: { xs: '1.1rem', md: '1.3rem' },
-                            color: '#333333',
-                            lineHeight: 1.8,
-                        }}
-                    >
-                        I recently picked up reading and didn’t expect to fall so hard for books—but now I’m hooked. Whether it’s dancing, coding, or discovering new stories, I’m always chasing what makes me feel alive.
-                    </Typography>
-                </Grid>
-
-                {/* Right - Image */}
-
+            <Typography variant="h4" textAlign="center" sx={{ mt: 4 }}>
+                My Skills
+            </Typography>
+            <br></br>
+            <br></br>
+            <Grid
+                container
+                spacing={10}
+                sx={{
+                    flexGrow: 1,
+                    maxWidth: '1000px',
+                    justifyContent: 'center',
+                }}
+            >
+                {skills.map((skill, index) => (
+                    <Grid item xs={6} sm={4} md={3} key={index}>
+                        <Paper
+                            elevation={4}
+                            sx={{
+                                p: 3,
+                                height: 'auto',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                gap: 3,
+                                textAlign: 'center',
+                                transition: 'transform 0.3s',
+                                '&:hover': {
+                                    transform: 'scale(1.05)',
+                                },
+                            }}
+                        >
+                            {skill.icon}
+                            <Typography variant="h6">{skill.name}</Typography>
+                        </Paper>
+                    </Grid>
+                ))}
             </Grid>
         </Box>
     );

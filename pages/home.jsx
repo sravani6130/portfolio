@@ -22,7 +22,7 @@ export default function HomePage() {
                 alignItems="center"
             >
                 {/* Text Content - Left Side */}
-                <Grid  md={6}>
+                <Grid item xs={12} md={6}>
                     <Box
                         display="flex"
                         flexDirection="column"
@@ -49,7 +49,6 @@ export default function HomePage() {
                                 fontSize: { xs: '2.5rem', md: '4rem' },
                                 color: '#00004d',
                                 mb: 4,
-                                fontFamily: '"Brush Script MT", cursive',
                             }}
                         >
 
@@ -79,7 +78,7 @@ export default function HomePage() {
                 </Grid>
 
                 {/* Image Content - Right Side */}
-                <Grid  md={6} display="flex" justifyContent="center" alignItems="center">
+                <Grid item xs={12} md={6} display="flex" justifyContent="center" alignItems="center">
                     <Box
                         sx={{
                             width: { xs: '300px', md: '500px' },

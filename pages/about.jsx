@@ -27,7 +27,7 @@ export default function AboutPage() {
                     >
                         {/* Replace with your actual image path and dimensions */}
                         <img
-                            src="https://sravani6130.github.io/portfolio/emoji.jpeg"
+                            src="https://sravani6130.github.io/portfolio/about.png"
                             alt="Profile"
                             style={{
                                 width: '100%',
@@ -42,7 +42,7 @@ export default function AboutPage() {
                 <Grid item xs={12} md={6} sx={{
                     mt: -90,
                     ml: 70,
-                }}>
+                    }}>
 
                     <Typography
                         variant="h2"
@@ -64,6 +64,7 @@ export default function AboutPage() {
                             color: '#333333',
                             lineHeight: 1.8,
                             mb: 3,
+
                         }}
                     >
                         I'm someone who loves to move—on the dance floor, through code, and across new places. I work on AI and machine learning projects, with a deep interest in data science.
@@ -76,6 +77,7 @@ export default function AboutPage() {
                             color: '#333333',
                             lineHeight: 1.8,
                             mb: 3,
+                            fontFamily: '"Tangerine", cursive',
                         }}
                     >
                         I also love solo travel—wandering through quiet temples, enjoying good food, and finding peace in green hills and fresh air.
