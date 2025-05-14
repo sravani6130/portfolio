@@ -22,7 +22,7 @@ export default function HomePage() {
                 alignItems="center"
             >
                 {/* Text Content - Left Side */}
-                <Grid item xs={12} md={6}>
+                <Grid  md={6}>
                     <Box
                         display="flex"
                         flexDirection="column"
@@ -49,36 +49,37 @@ export default function HomePage() {
                                 fontSize: { xs: '2.5rem', md: '4rem' },
                                 color: '#00004d',
                                 mb: 4,
+                                fontFamily: '"Brush Script MT", cursive',
                             }}
                         >
-                            I'm Sravani Vijaykumar
+
+                            I'm{' '}
+                            <Box component="span" sx={{ color: '#ffcc00' ,fontFamily: '"Brush Script MT", cursive', }}>
+                                Sravani
+                            </Box>{' '}
+                            Vijaykumar
                         </Typography>
 
-                        <Stack direction="row" spacing={2} mt={4}>
-                            <IconButton sx={{ bgcolor: 'black' }} href="#" aria-label="LinkedIn">
-                                <Linkedin size={20} style={{ color: '#3b82f6' }} />
+                        <Stack direction="row" spacing={5} mt={4}>
+                            <IconButton sx={{ bgcolor: 'black' }} href="https://www.linkedin.com/in/antati-sravani-92b6b5341/" target="_blank" aria-label="LinkedIn">
+                                <Linkedin size={30} style={{ color: '#3b82f6' }} />
                             </IconButton>
-                            <IconButton sx={{ bgcolor: 'black' }} href="#" aria-label="GitHub">
-                                <Github size={20} style={{ color: '#ffffff' }} />
+                            <IconButton sx={{ bgcolor: 'black' }} href="https://github.com/sravani6130" target="_blank" aria-label="GitHub">
+                                <Github size={30} style={{ color: '#ffffff' }} />
                             </IconButton>
-                            <IconButton sx={{ bgcolor: 'black' }} href="#" aria-label="Twitter">
-                                <Twitter size={20} style={{ color: '#60a5fa' }} />
+
+                            <IconButton sx={{ bgcolor: 'black' }} href="mailto:a.sravanivijaykumar.6130@gmail.com"  target="_blank" aria-label="Send">
+                                <Send size={30} style={{ color: '#3b82f6' }} />
                             </IconButton>
-                            <IconButton sx={{ bgcolor: 'black' }} href="#" aria-label="Send">
-                                <Send size={20} style={{ color: '#3b82f6' }} />
-                            </IconButton>
-                            <IconButton sx={{ bgcolor: 'black' }} href="#" aria-label="Instagram">
-                                <Instagram size={20} style={{ color: '#ec4899' }} />
-                            </IconButton>
-                            <IconButton sx={{ bgcolor: 'black' }} href="#" aria-label="Codepen">
-                                <Codepen size={20} style={{ color: '#ffffff' }} />
+                            <IconButton sx={{ bgcolor: 'black' }} href="https://www.instagram.com/__sravani__6130/" target="_blank" aria-label="Instagram">
+                                <Instagram size={30} style={{ color: '#ec4899' }} />
                             </IconButton>
                         </Stack>
                     </Box>
                 </Grid>
 
                 {/* Image Content - Right Side */}
-                <Grid item xs={12} md={6} display="flex" justifyContent="center" alignItems="center">
+                <Grid  md={6} display="flex" justifyContent="center" alignItems="center">
                     <Box
                         sx={{
                             width: { xs: '300px', md: '500px' },
