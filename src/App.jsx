@@ -9,10 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    // <>
-    // <Navbar />
-    // <HomePage />
-    // </>
+
     <Router basename="/portfolio">
       <Navbar />
       <div >
