@@ -45,6 +45,11 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link text-black fw-medium hover-effect" to="/education">
+                                    Education
+                                </Link>
+                            </li>
+                            <li className="nav-item">
                                 {/* Resume Link */}
                                 <a
                                     className="nav-link text-black fw-medium hover-effect"

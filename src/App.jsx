@@ -3,6 +3,7 @@ import Navbar from '../pages/nav'
 import HomePage from '../pages/home'
 import AboutPage from '../pages/about';
 import SkillsPage from '../pages/skill';
+import EducationPage from '../pages/education';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/skills" element={<SkillsPage />} />
-          {/* Add routes for Education, Work, Experience, Contact, etc. */}
+          <Route path="/education" element={<EducationPage />} />
         </Routes>
       </div>
     </Router>
